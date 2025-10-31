@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+pydantic
+transformers
+torch
+# other libs as needed (e.g., datasets, sentence-transformers, etc)

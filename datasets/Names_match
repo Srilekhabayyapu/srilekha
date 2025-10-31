@@ -1,0 +1,49 @@
+Dataset of names:
+   geetha
+   gita
+   gitu
+   geeta
+   geetha reddy
+   githa
+   geetha smith
+   geetha kumar
+   getha
+   geethaa
+   gita rao
+   geeta rao
+   gita k
+   githa rao
+   geitha
+   geetha devi
+   gita devi
+   geetu
+   geethu
+   getha reddy
+   geetha reddy rao
+   geethaa reddy
+   gita reddy
+   geeta reddy
+   gita reddy kumar
+   geetha k
+   geitha k
+   geethu k
+   gitu k
+   githa kumar
+   gita kumar
+   geeta kumar
+   geetha kumar rao
+
+Enter a name (or ‘quit’ to exit): Geetha Reddy
+Input Name : Geetha Reddy
+Best Match : geetha reddy (score 100%)
+Other Top Matches:
+  geetha reddy — 100%
+  geetha reddy rao — 90%
+  geetha k — 72%
+  geetha kumar rao — 70%
+  geethu k — 68%
+  geethu — 66%
+  geeta — 65%
+  gita — 63%
+  geeta reddy — 60%
+  gita reddy — 59%

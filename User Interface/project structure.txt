@@ -1,0 +1,14 @@
+Project Structure
+chatbot_project/
+├── app/
+│   ├── main.py            # FastAPI server
+│   ├── model_wrapper.py   # load/fine-tune model + inference logic
+│   └── schemas.py         # Pydantic schemas for API
+├── ui/
+│   └── simple_web.html    # simple web chatbot UI
+├── data/
+│   ├── recipes_train.json # your fine-tuning dataset (recipes)
+│   └── …                  # other data
+├── fine_tune.py           # script to fine-tune model on your recipes data
+├── requirements.txt
+└── README.md

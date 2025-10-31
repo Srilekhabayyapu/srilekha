@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Recipe Chatbot</title>
+</head>
+<body>
+  <h1>Recipe Chatbot</h1>
+  <div id="chatbox" style="height:400px; width:600px; border:1px solid #ccc; overflow:auto;"></div>
+  <input type="text" id="userInput" style="width:500px;" placeholder="Enter ingredients, e.g., egg, onion...">
+  <button id="sendBtn">Send</button>
+
+  <script>
+    async function sendMessage() {
+      const inputEl = document.getElementById("userInput");
+      const userText = inputEl.value;
+      inputEl.value = "";
+      const chatbox = document.getElementById("chatbox");
+      chatbox.innerHTML += `<div><b>You:</b> ${userText}</div>`;
+      const resp = await fetch("/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ user_input: userText })
+      });
+      const data = await resp.json();
+      chatbox.innerHTML += `<div><b>Bot:</b> ${data.bot_response}</div>`;
+      chatbox.scrollTop = chatbox.scrollHeight;
+    }
+
+    document.getElementById("sendBtn").addEventListener("click", sendMessage);
+  </script>
+</body>
+</html>
